@@ -246,4 +246,137 @@ html, body {
       height: 180px; /* Reduce height on very small screens */
     }
   }
+
+  /* Default Styles for Desktop (No changes here) */
+
+/* Mobile Styles - Will only apply to devices with width <= 768px */
+@media only screen and (max-width: 768px) {
+
+  /* Top Bar */
+  .topbar {
+    flex-direction: column; /* Stack items vertically on mobile */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .topbar .left h1 {
+    font-size: 20px;
+  }
+
+  .topbar .right a {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+  }
+
+  .topbar .right a:hover {
+    text-decoration: none;
+  }
+
+  /* Main Page */
+  .mainpage {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .firsthalf h1 {
+    font-size: 30px;
+  }
+
+  .firsthalf h3 {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .secondhalf img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Services Section */
+  .allservice-column,
+  .allaviation-column,
+  .allbdandcomp-column {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .service-column,
+  .aviation-column,
+  .bdandcomp-column {
+    width: 100%; /* Full width on mobile */
+    height: auto;
+    padding: 15px;
+  }
+
+  /* Contact Section */
+  .In_contact {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .In_contact h1 {
+    font-size: 24px;
+  }
+
+  .In_contact p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* Very Small Devices (Phones in Portrait Mode) */
+@media only screen and (max-width: 480px) {
+
+  .topbar {
+    padding: 10px 5px;
+  }
+
+  .topbar .left h1 {
+    font-size: 18px;
+  }
+
+  .topbar .right a {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .firsthalf h1 {
+    font-size: 24px;
+  }
+
+  .firsthalf h3 {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .secondhalf img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .service-column,
+  .aviation-column,
+  .bdandcomp-column {
+    width: 100%; /* Full width on mobile */
+    padding: 10px;
+  }
+
+  .In_contact h1 {
+    font-size: 20px;
+  }
+
+  .In_contact p {
+    font-size: 12px;
+  }
+}
+
   
